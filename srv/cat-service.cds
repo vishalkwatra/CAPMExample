@@ -9,4 +9,6 @@ service CatalogService {
     entity POItems @(
         title               : '{i18n>poService}',
     ) as projection on PO.Items;
+
+    function sleep() returns Boolean;
 }
